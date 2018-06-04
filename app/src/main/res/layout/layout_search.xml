@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include layout="@layout/include_toolbar_common"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/uid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/uid_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Id" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_marginRight="10sp"
+        android:text="Summary"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/uid"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/summary"/>
+
+    <Button
+        android:id="@+id/seach_submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/summary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:background="@layout/include_button"
+        android:text="Submit"
+        android:textColor="#f8fdf9" />
+
+</RelativeLayout>
+
+</ScrollView>

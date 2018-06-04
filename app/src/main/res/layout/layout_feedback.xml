@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include layout="@layout/include_toolbar_common"/>
+    <include layout="@layout/include_date_time"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/clock"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/name_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/contact_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact"
+            android:inputType="number"
+            android:maxLength="10"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/contact"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/comments_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comments"
+            android:inputType="textMultiLine"
+            android:textAlignment="center"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/feedback_submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comments"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:background="@layout/include_button"
+        android:text="Submit"
+        android:textColor="#f8fdf9" />
+
+</RelativeLayout>

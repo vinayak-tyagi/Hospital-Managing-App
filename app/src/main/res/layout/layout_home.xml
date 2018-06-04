@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:src="@mipmap/ic_add_icon_round" />
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:text="@string/app_name"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/opd_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:background="@layout/include_button"
+            android:elevation="5dp"
+            android:text="opd registration"
+            android:textColor="#f8fdf9" />
+
+        <Button
+            android:id="@+id/ipd_register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/opd_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:background="@layout/include_button"
+            android:elevation="5dp"
+            android:text="ipd registration"
+            android:textColor="#f8fdf9" />
+
+
+        <Button
+            android:id="@+id/procedure_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ipd_register_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:background="@layout/include_button"
+            android:elevation="5dp"
+            android:text="procedure"
+            android:textColor="#f8fdf9" />
+
+
+        <Button
+            android:id="@+id/ot_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/procedure_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:background="@layout/include_button"
+            android:elevation="5dp"
+            android:text="OT"
+            android:textColor="#f8fdf9" />
+
+        <Button
+            android:id="@+id/leave_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ot_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:background="@layout/include_button"
+            android:elevation="5dp"
+            android:text="Leave"
+            android:textColor="#f8fdf9" />
+
+        <Button
+            android:id="@+id/medical_stock_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/leave_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:background="@layout/include_button"
+            android:elevation="5dp"
+            android:text="Medical Stock"
+            android:textColor="#f8fdf9" />
+
+        <Button
+            android:id="@+id/oth_stock_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/medical_stock_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:background="@layout/include_button"
+            android:elevation="5dp"
+            android:text="oth Stock"
+            android:textColor="#f8fdf9" />
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/oth_stock_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:background="@layout/include_button"
+            android:elevation="5dp"
+            android:text="Search"
+            android:textColor="#f8fdf9" />
+
+        <Button
+            android:id="@+id/feedback_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="20sp"
+            android:background="@layout/include_button"
+            android:elevation="5dp"
+            android:text="feedback"
+            android:textColor="#f8fdf9" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include layout="@layout/include_toolbar_common"/>
+
+    <include layout="@layout/include_date_time"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/clock"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="20dp">
+        <EditText
+            android:id="@+id/procedure_name_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/procedure_contact_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:maxLength="10"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/procedure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/contact"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/procedure_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Procedure" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/procedure"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/procedure_age_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:inputType="number"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/charge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/age"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/procedure_charge_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Charges"
+            android:inputType="number|numberDecimal"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/procedure_update_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/charge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:background="@layout/include_button"
+        android:text="Update"
+        android:textColor="#f8fdf9" />
+
+</RelativeLayout>

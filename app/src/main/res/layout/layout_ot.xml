@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include layout="@layout/include_toolbar_common"/>
+    <include layout="@layout/include_date_time"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clock"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:layout_marginTop="20sp">
+
+        <EditText
+            android:id="@+id/date_ot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/uid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:layout_marginTop="5sp">
+
+        <EditText
+            android:id="@+id/unique_id_ot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Unique Id" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uid"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:layout_marginTop="5sp">
+
+        <EditText
+            android:id="@+id/name_ot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/diagnosis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:layout_marginTop="5sp">
+
+        <EditText
+            android:id="@+id/diagnosis_ot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Diagnosis " />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/procedure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diagnosis"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:layout_marginTop="5sp">
+
+        <EditText
+            android:id="@+id/procedure_ot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Procedure" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/consultant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/procedure"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:layout_marginTop="5sp">
+
+        <EditText
+            android:id="@+id/consultant_ot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Consultant" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/anusthisia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/consultant"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:layout_marginTop="5sp">
+
+        <EditText
+            android:id="@+id/anusthisia_ot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Anusthesia" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/ot_save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/anusthisia"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:background="@layout/include_button"
+        android:text="Save"
+        android:textColor="#f8fdf9" />
+
+</RelativeLayout>
+
+</ScrollView>
