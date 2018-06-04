@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Konark Hospital and Research Center</string>
+    <string name="app_name">Hospital Manager</string>
     <string name="oops">oops</string>
     <string name="dont_worry_engineers_r_working">dont_worry_engineers_r_working</string>
     <string name="report_issue">report_issue</string>
