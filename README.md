@@ -6,5 +6,5 @@ In this application the online database is used which furter used in php to genr
 
 ## Installation
 * Its mandatory to have Android Studio in your System
-* Simply clone this repo and Open it with android Studio with `Internet ON for Graddle Syn` 
+* Simply clone this repo and Open it with android Studio with `Internet ON for Gradle Sync` 
 * Than you are ready to run or alter some changes.
