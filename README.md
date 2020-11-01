@@ -4,6 +4,9 @@ This Application is android app which manages different activities in an Hospita
 ## Working 
 In this application the online database is used which furter used in php to genrate the REST API for `(GET,POST Response)` and than further this api has been used in android application by json parsing using volly library.
 
+## System Design
+![image](https://user-images.githubusercontent.com/39195953/97812809-0347fe80-1caa-11eb-8f8e-dbd01f0c08ae.png)
+
 ## Installation
 * Its mandatory to have Android Studio in your System
 * Simply clone this repo and Open it with android Studio with `Internet ON for Gradle Sync` 
